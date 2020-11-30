@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỹ thuật giao thông</title>
+    <link rel="stylesheet" href="sytel.css">
+    <link rel="shortcut icon" href="/img/icon.png">
+</head>
+
+<body>
+    <div class="rps">
+ 
+
+    <h1 style="display: flex;">Kỹ thuật giao thông </h1>
+
+
+
+
+    <div class="btnchon" style="display: flex;">
+        <button class="btn2" id="vd2">Ví dụ 2</button>
+        <button class="btn3" id="vd3">Ví dụ 3</button>
+        <button class="btn3" id="vd4btn">Ví Dụ 4</button>
+        <button class="btn3" id="vd5btn">Ví Dụ 5</button>
+    <!-- <a href="vid4.html">Đường hai chiều </a> -->
+    </div>
+    <!-- vi du 4 -->
+    <div>
+        <h5> </h5>
+    </div>
+    <div id="vd4a" style="display: none;">
+
+        <div style="display: flex;">
+            <p id="solanxe">N: <input id="N" type="text" placeholder="Số làn xe"></p>
+            <p id="fssld1">FFS(lên dốc): <input id="ffsld" type="text" placeholder="Tốc độ lên dốc"></p>
+            <p id="fssxd1">FFS(xuống dốc): <input id="ffsxd" type="text" placeholder="Tốc độ xuống dốc"></p>
+            <p id="do_dai_doc_1a">Độ dài dốc 1: <input class="input" id="do_dai_doc_1" type="text" onkeyup="tong()" placeholder="(Ví dụ: 3000ft)"></p>
+            <p id="do_dai_doc_2a">Độ dài dốc 2: <input class="input" id="do_dai_doc_2" type="text" onkeyup="tong()" placeholder="(Ví dụ: 3000ft)"></p>
+            <p id="tesst" style="color: crimson"></p>
+        </div>
+        <div style="display: flex;">
+            <p id="dd1a">Hệ số quy đổi: <input id="ETld" type="text" placeholder="(ET)Lên dốc(xe tải)"></p>
+            <p id="dd2a">Hệ số quy đổi: <input id="ETxd" type="text" placeholder="(ET)Xuống dốc(xe tải)"></p>
+            <p id="ER">Hệ số quy đổi: <input id="ERld" type="text" placeholder="(ER) Lên dốc(xe du lịch)"></p>
+            <p id="ER">Hệ số quy đổi: <input id="ERxd" type="text" placeholder="(ER =1.2) Không cần nhập nữa"></p>
+        </div>
+
+    </div>
+
+    <!-- vidu3 -->
+    <div id="vd33" style="display: none;">
+        <div style="display: flex;">
+            <p id="solanxe">N: <input id="N" type="text" placeholder="Số làn xe"></p>
+            <p id="llxtl">Lưu lượng: <input id="lltl" type="text" placeholder="Lưu lượng xe(V-tương lai) "></p>
+        </div>
+    </div>
+    <!-- vidu 2  -->
+    <div id="dungchung35" style="display: none;">
+        <p id="fss2">FFS: <input id="ffs" type="text" placeholder="Tốc độ dòng tự do"></p>
+
+    </div>
+
+    <div id="vd22" style="display: none;">
+        <div>
+            <div id="vd22a">
+            <div  style="display: flex;">
+                <p id="brld">Bề rộng làn đường: <input id="BRLD" onkeyup="tinh()" type="text" placeholder="Bề rộng làn đường "></p>
+                <p id="hlat">Hành lang an toàn: <input id="HLAT" onkeyup="tinh()" type="text" placeholder="Hành lang an toàn "></p>
+                <p id="trdd">TRD: <input id="TRD" type="text" onkeyup="tinh()" placeholder="Mật độ đường nhánh"></p>
+            </div>
+            </div>
+            <div id="mpvaa" style="display: flex;">
+                <p class="mpvv">Mức phục vụ :</p>
+                <p>A:<input id="A" type="checkbox"> ||</p> <br>
+                <p>B:<input id="B" type="checkbox"> ||</p>
+                <p>C:<input id="C" type="checkbox"> ||</p>
+                <p>D:<input id="D" type="checkbox"> ||</p>
+                <p>E:<input id="E" type="checkbox"> ||</p>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <!-- dung chung -->
+
+    <div id="dungchung" style="display: none">
+        <div style="display: flex;">
+
+            <p>PHF: <input type="text" id="PHF" onkeyup="tinh()" placeholder="Hệ số giờ cao điểm"></p>
+            <p id="luuluong1">Lưu lượng: <input id="ll" onkeyup="tinh()" type="text" placeholder="Lưu lượng xe(V) "></p>
+            <div style="display: flex;">
+                <p>Hệ số điều chỉnh do xe nặng: <input id="xetai" onkeyup="tinh()" type="text" placeholder="Xe tải(PT) "></p>
+                <p>Hệ số điều chỉnh do xe nặng: <input id="xedulich" onkeyup="tinh()" type="text" placeholder="Xe du lịch(PR) "></p>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!--dung chung 2 vs 3  -->
+    <div id="dungchung23" style="display: none;">
+        <div>
+            <div style="display: flex;">
+                <p>Đồng bằng: <input id="db" type="checkbox"> ||</p>
+                <p> Đồi: <input id="doi" type="checkbox"> ||</p>
+                <p> Núi: <input id="nui" type="checkbox"> ||</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="vd5" style="display: none;">
+        <div style="display: flex;">
+            <p>AADT: <input type="text" id="AADT" placeholder="Lưu lượng xe thiết kế TB ngày đêm "></p>
+            <p>Tỷ lệ:<input type="text" id="TL" placeholder="Tỷ lệ lưu lượng....."></p>
+        </div>
+
+
+
+    </div>
+
+    
+        <div id="vd23" style="display: none;">
+
+            <div id="ffcs1" style="display: none;">
+                <p style=" color: blue;">1. Tính toán toán tốc độ dòng tự do FFS</p>
+                <h5>FFC = 75.4 - fLW - fLC – 3,22.TRD^0,84 = <strong style="color: crimson;" id="kq"></strong> mi/h</h5>
+            </div>
+
+            <div id="dc1" style="display: none;">
+                <p style=" color: blue;">2.Lựa chọn đường cong tốc độ dòng FFS</p>
+                <h5>Đường cong tốc độ dòng được chọn là: <strong style="color: crimson;" id="dc"></strong> mi/h</h5>
+            </div>
+            <div id="fhv1" style="display: none;">
+                <p style=" color: blue;">4. Xác định số lượng làn xe </p>
+                <h5>FHV=1/(1+PT*(ET-1)+PR*(ER-1)) = <strong id="fhv" style="color: crimson;"></strong></h5>
+                <h5 id="n">N = V/(MFSi*PHF*fHV*fp) = <strong id="kqn" style="color: crimson;"></strong> làn</h5>
+                <p id="na">===>> Số làn cần được làm tròn, vì vậy để có mức phục vụ tối thiểu <strong style="color: crimson;" id="mpv"></strong> thì cần phải xây dựng mỗi hướng <strong style="color: crimson;" id="lamtron"></strong> làn, tức là đường cao tốc
+                    <strong style="color: crimson;" id="caotoc"></strong> làn xe.</p>
+            </div>
+            <div id="b5" style="display: none;">
+                <p style="color: blue;">5. Xác định vận tốc và mật độ</p>
+                <h5>Vp = V/(PHF*N*fHV*fp) = <strong style="color: crimson;" id="vp"></strong> xe/h/làn</h5>
+                <h5 id="vptlh5">Vp(tương lai) = Vtl/(PHF*N*fHV*fp) = <strong style="color: crimson;" id="vptl"></strong> xe/h/làn</h5>
+                <p>===>> Trong trường hợp này, tốc độ dòng có thể xác định theo toán đồ hoặc theo công thức gần đúng trong bảng 3.4</p>
+                <h5 id="congthuc">
+                <h5 style="color: crimson;" id="kqcs"></h5>
+                </h5>
+                <h5 style="display: none;" id="congthuc">
+                <h5 style="color: crimson;" id="kqcs2"></h5>
+                </h5>
+                <h5><strong style="color: blue;">Mật độ: </strong>D = Vp/S = <strong style="color: crimson;" id="mdd"></strong> xe/mi/làn</h5>
+                <h5 id="mdtlh5"><strong style="color: blue;">Mật độ: </strong>D = Vp/S = <strong style="color: crimson;" id="mddtl"></strong> xe/mi/làn(Tương lai)</h5>
+                <h5><strong style="color: blue;">6. Mức phục vụ là :  </strong> <strong style="color: crimson;" id="mpv1"></strong> xe/mi/làn</h5>
+            </div>
+                <div id="b7" >
+                    <p style="color: blue;">7. Khi nào đường sẽ đạt khả năng thông qua</p>
+                    <h5>Khả năng thông qua ở điều kiện thực tế : SF = MSF*N*fHV*fp = <strong style="color: crimson;" id="kqsf"></strong> xe/h</h5>
+                    <h5>Xét hệ số giờ cao điêm :SV=SF*PHF = <strong style="color: crimson;" id="kqsv"></strong> xe/h</h5>
+                    <h5>So sánh lưu lượng và khả năng thông qua: Sv = Lưu lượng xe tương lai*(1.04)^n = <strong style="color: crimson;" id="dudoan"></strong></h5>
+                </div>
+            
+         </div>
+        <div id="vd4" style="display: none;">
+            <p style="color: blue;">Ví dụ 4: </p>
+            <div>
+                <h5 style="color: brown;">FHV</h5>
+                <h5>Fhv(lên dốc) = 1 / (1 + pt * (ET - 1) + pr * (ER - 1)) = <strong style="color: crimson;" id="fhvld1"></strong></h5>
+                <h5>Fhv(xuống dốc) = 1 / (1 + pt * (ET - 1) + pr * (ER - 1)) = <strong style="color: crimson;" id="fhvxd1"></strong></h5>
+                <h5 style="color: brown;">Theo đó Vp: </h5>
+                <h5>Vp(Lên dốc) = V/(PHF*N*fHV*fp) = <strong style="color: crimson;" id="vpld"></strong></h5>
+                <h5>Vp(Xuống dốc) = V/(PHF*N*fHV*fp) = <strong style="color: crimson;" id="vpxd"></strong></h5>
+                <h5 style="color: brown;">Xác định mật độ và tốc độ</h5>
+                <h5>Đoạn xe lên dốc: <strong style="color: deepskyblue;" id="doanxelendoc"> </strong> <strong style="color: crimson;" id="kqxld"></strong></h5>
+                <h5>Đoạn xe xuống dốc: <strong style="color: deepskyblue;" id="doanxexuongdoc"> </strong> <strong style="color: crimson;" id="kqxxd"></strong></h5>
+                <h5 style="color: brown;">Mật độ:</h5>
+                <h5>D(Lên dốc) = Vp/S = <strong style="color: crimson;" id="mdld"></strong></h5>
+                <h5>D(Xuống dốc) = Vp/S = <strong style="color: crimson;" id="mdxd"></strong></h5>
+                <h5 style="color: brown;">Mức phục vụ: </h5>
+                <h5>Lên dốc: <strong style="color: crimson;" id="mpvld"></strong></h5>
+                <h5>Xuống dốc: <strong style="color: crimson;" id="mpvxd"></strong></h5>
+            </div>
+        </div>
+
+        <div id="vd5a" style="display: none;" >
+            <p style="color: blue;">Ví dụ 5: </p>
+            <h5 style="color: brown;">Xác định lưu lượng xe thiết kế cho một hướng: </h5>
+            <h5>V = DDHV = AADT*k*D = <strong id="kqV" style="color: crimson;"></strong></h5>
+            <h5>Giá trị mặc định FFS = <strong id="ffs1" style="color: crimson;" ></strong></h5>
+            <h5>FHV = <strong style="color: crimson;" id="kqfhv1"></strong></h5>
+            <h5>Số làn xe N  = <strong style="color: crimson;" id="solanxeN"></strong></h5>
+            <strong id="lamtron1" style="color: crimson;"></strong>
+            <h5 style="color: brown;">Xác định mật độ và tốc độ:</h5>
+            <h5>Vp = <strong id="kqvp1"></strong></h5>
+            <h5 style="color: brown;">Tốc độ S: <strong style="color: deepskyblue;" id="svd5"> </strong> <strong style="color: crimson;" id="kqvd5"></strong></h5>
+            <h5>Mật độ: D = Vp/s = <strong style="color: crimson;" id="Dvd5"></strong> </h5>
+            <h5>Mức phục vụ: <strong style="color: crimson;" id="mpvvd5"></strong></h5>
+       
+        </div>
+
+
+    
+    <div class="classbtn" style="display: flex;">
+        <button class="btn4" id="btn">Tính toán</button>
+       
+    </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+    <script src="key.js"></script>
+  
+    <script src="main.js"></script>
+</body>
+
+</html>

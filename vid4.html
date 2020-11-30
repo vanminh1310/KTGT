@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xe hai làn đường</title>
+    <link rel="stylesheet" href="sytel.css">
+    <link rel="shortcut icon" href="/img/icon.png"  >
+</head>
+
+<body>
+    <h1> Xe hai làn đường </h1>
+    
+    <div style="display:flex; ">
+        <p id="fssxd"> Thành phần xe: <input id="tpx1" type="text" onkeyup="show()" placeholder="Xe tải(%)"></p>
+        <p id="fssxd"> Thành phần xe: <input id="tpx2" type="text" onkeyup="show()" placeholder="Xe du lịch(%)"></p>
+        <p id="fssld1">Lưu lượng xe: <input id="LLxe" type="text" onkeyup="show()" placeholder="(V)"></p>
+        <p id="fssxd1">Bề rộng làn đường:  <input id="BRLD" type="text" onkeyup="show()" placeholder="(Ví dụ 12ft)"></p>
+        <p id="do_dai_doc_1a">Hành lan an toàn:  <input id="HLAT" type="text" onkeyup="show()" placeholder="(Ví dụ: 6ft)"></p>
+    </div>
+    <div style="display: flex;">
+            <p id="do_dai_doc_2a">Mật độ điểm kết nối: <input id="MDDKN" onkeyup="show()" type="text" placeholder="Số điểm kết nối"></p>
+            <p id="dd1a">Tốc độ: <input id="BFFS" type="text" onkeyup="show()" placeholder="BFFS"></p>
+            <p id="dd2a">Chiều dài đoạn đường:<input id="CDDD" onkeyup="show()" type="text" placeholder="Đoạn nghiên cứu"></p>
+            <p id="dd2a">Tỷ lệ lưu lượng: <input id="TLLL" onkeyup="show()" type="text" placeholder="Đoạn nghiên cứu"></p>
+            <p id="dd2a">Tỷ lệ Vùng Cấm Vượt : <input id="TLCV" onkeyup="show()" type="text" placeholder="(Ví dụ 20%)"></p>
+            <p>PHF: <input type="text" id="PHF" onkeyup="show()" placeholder="Hệ số giờ cao điểm"></p>
+    </div>
+    <div style="display: flex;">
+        <div style="display: flex;">
+                <p>Đồng bằng: <input id="db"  onkeyup="show()" type="checkbox"> ||</p>
+                <p> Đồi: <input id="doi"  onkeyup="show()"  type="checkbox"> ||</p>
+                
+        </div>
+        <br>
+        <div style="display: flex;">
+            <p>Loại I: <input id="I" type="checkbox"> ||</p>
+            <p>Loại II: <input id="II" type="checkbox"> ||</p>
+            <p>Loại III: <input id="III" type="checkbox"></p>
+               
+        </div>
+    </div>
+    <div style="display: flex; color: blue;">
+        <p>FFS:<strong id="ffs" style="color: brown;"></strong></p>
+        <p>FATS: <strong id="fats" style="color: brown;"></strong></p>
+        <p>ET: <strong id="ET" style="color: brown;"></strong></p>
+        
+        <p>HVATS: <strong id="HV" style="color: brown;"></strong></p>
+        <p>Vd_ATS: <strong id="dATS" style="color: brown;"></strong></p>
+
+
+    </div>
+    
+    <script src="vidu4.js"></script>
+</body>
+</html>

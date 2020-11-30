@@ -1,0 +1,108 @@
+p{
+	padding: 2px;
+	margin-left: 10px;
+	
+}
+.mpvv{
+    margin-left: 25px;
+}
+h1{
+   margin-left: 43vw;
+}
+.btn2{
+    background-color:#44c767;
+	border-radius:20px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:8px 22px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn2:hover {
+	background-color:#5cbf2a;
+}
+.btn2:active {
+	position:relative;
+	top:1px;
+}
+.btn3{
+    background-color:#44c767;
+	border-radius:20px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:8px 22px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn3:hover {
+	background-color:#5cbf2a;
+}
+.btn3:active {
+	position:relative;
+	top:1px;
+}
+.btn4{
+    margin-left: 48vw;
+    box-shadow: 3px 4px 0px 0px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:18px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:10px 22px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn4:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.btn4:active {
+	position:relative;
+	top:1px;
+}
+.btnchon{
+	margin-left: 40%;
+}
+
+body{
+	margin: auto;
+	/* background-image: url(https://images.unsplash.com/photo-1546743298-d5e465f2c294?ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80); */
+	/* background-image: radial-gradient( circle 900px at 50.7% -7.5%,  rgba(118,203,217,1) 0.3%, rgba(13,59,128,1) 100.2% ); */
+	/* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,249,255,1) 11.1%, rgba(255,241,255,1) 90% ); */
+
+}
+
+@media screen and (max-width: 900px){
+	.btnchon  {
+		margin-left: 10vw;
+		grid-template-columns: 1fr;
+		
+}
+}
+@media screen and (max-width: 900px){
+	h1 {
+		margin-left: 25vw;
+		grid-template-columns: 1fr;
+		
+}
+}
+@media screen and (max-width: 900px){
+	.btn4 {
+		margin-left: 35vw;
+		grid-template-columns: 1fr;
+		
+}
+}
